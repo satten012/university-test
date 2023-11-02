@@ -1,0 +1,90 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Crimson Text', serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+header{
+    background-color: #2572FF;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items:center;
+    height: 85px;
+    color: white;
+}
+
+.header-menu ul {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.header-logo{
+    max-width: 15%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-logo img {
+    max-width: 100%;
+}
+
+.header-menu li {
+    padding: 32px 16px;
+    font-size: 18px;
+}
+
+.container > div > ul > li:hover, 
+.header-phone:hover  {
+    color: #E76925;
+    transition: .5s;
+}
+
+.header-phone{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.header-phone i {
+    margin-right: 16px;
+}
+
+.swiper-wrapper > div {
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-wrapper > div:nth-child(2){
+
+    background-image: url(https://static01.nyt.com/images/2023/08/21/opinion/21wildavsky/21wildavsky-videoSixteenByNineJumbo1600-v2.jpg)
+}
+
+.swiper-wrapper > div:nth-child(1){
+    background-position: top;
+    background-image: url(https://varsity.mhrtheme.com/wp-content/uploads/2022/11/banner.jpg) 
+
+}
+
+
+.swiper-wrapper > div:nth-child(3){
+    background-image: url(https://jobifyinc.com/wp-content/uploads/2022/06/Communities_Webinar-copy.jpg);
+    background-position: bottom;
+}
+
+
