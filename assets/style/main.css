@@ -157,10 +157,11 @@ main{
 .main-advantage-facts > div h4{
     margin: 25px 0 13px;
     color: #0b1c39;
+    max-width: 380px;
 }
 
 .main-advantage-facts > div p {
-    max-width: 450px;
+    max-width: 380px;
     color: #626a77;
 }
 
@@ -630,13 +631,163 @@ width: 40%;
 }
 
 .main-partners-grid > div {
-    background-color: #E76925;
     height: 205px;
     margin-left: 15px;
     border-radius: 10px;
     padding: 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: all .5s;
 }
 
 .main-partners-grid > div img {
     width: 100%;
+    transition: all .5s;
+}
+
+.main-partners-grid > div:hover{
+    box-shadow: 0px 10px 40px 0px rgba(2, 25, 55, 0.466);
+    transition: all .5s;
+}
+
+.main-partners-grid > div img:hover{
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+.main-form{
+    padding-top: 120px;
+    display: flex;
+    padding-left: 0 ;
+    padding-right: 0;
+    color: #0b1c39;
+    background: #F6F7FA;
+}
+
+.main-form > div {
+    width: 50%;
+    height: 500px;
+
+}
+
+.main-form > div:nth-child(1) img {
+    width: 100%;
+}
+
+.main-form form{
+    padding: 32px;
+}
+
+.main-advantage-form-2{
+    margin-left: 35px;
+    width: 35%;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #0c2642;
+}
+
+.main-advantage-form-2{
+    top: 0;
+}
+
+.main-contacts{
+    background: #F6F7FA;
+    height: 270px;
+    padding-bottom: 120px;
+}
+
+.main-contacts > div > div {
+    border: 2px solid #0c2642;
+height: 150px;
+    width: 25%;
+}
+
+.main-contacts > div > div:nth-child(n+2){
+    border-left: none;
+}
+
+footer{
+    background: #0c2642;
+    color: white;
+
+}
+
+.footer-title{
+    padding-top: 120px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+}
+
+.footer-titleImg{
+    height: 27px;
+}
+
+.footer-titleImg img{
+    height: 27px;
+}
+
+.justify-content-between > div:nth-child(1){
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.container-content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+}
+
+.container-content div ul{
+margin-bottom: 0;
+padding-left: 0;
+margin-top: 20px;
+
+}
+
+.footer-copyright{
+    padding: 30px 0;
+}
+
+.container-content div ul li {
+    margin-top: 5px;
+}
+
+.container-content > div ul li i {
+    margin-right: 10px;
+}
+
+.footer-schedule button{
+    border: none;
+    margin-top: 20px;
+    padding: 10px 15px;
+    width: 100%;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 15px;
+}
+
+.container-content > div h4, .container-content > div ul li, .footer-schedule > button {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container-content > div h4:hover,
+.container-content > div ul li:hover{
+    color: #E76925;
+    transition: .5s;
+
+}
+
+.footer-schedule >button:hover {
+    border-color: #E76925 !important;
+    color: #E76925 !important;
+}
+
+.text-cetner{
+    text-align: center;
 }
