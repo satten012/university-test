@@ -15,7 +15,11 @@ ul li{
 }
 
 header{
-    background-color: #2572FF;
+    background-color: #0c2642;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 header > div {
@@ -50,6 +54,7 @@ header > div {
 }
 
 .container > div > ul > li:hover, 
+.mySwiper  .swiper-wrapper > .swiper-slide > div button:hover,
 .header-phone:hover  {
     color: #E76925;
     transition: .5s;
@@ -64,27 +69,574 @@ header > div {
     margin-right: 16px;
 }
 
-.swiper-wrapper > div {
+.mySwiper > .swiper-wrapper > div {
     height: 70vh;
     background-position: center;
     background-size: cover;
 }
 
-.swiper-wrapper > div:nth-child(2){
 
-    background-image: url(https://static01.nyt.com/images/2023/08/21/opinion/21wildavsky/21wildavsky-videoSixteenByNineJumbo1600-v2.jpg)
+
+.mySwiper > .swiper-wrapper > div:nth-child(2){
+
+    background-image: url(https://varsity.mhrtheme.com/wp-content/uploads/2022/11/banner_1.png)
 }
 
-.swiper-wrapper > div:nth-child(1){
+.mySwiper > .swiper-wrapper > div:nth-child(1){
     background-position: top;
+    background-color: black;
     background-image: url(https://varsity.mhrtheme.com/wp-content/uploads/2022/11/banner.jpg) 
-
 }
 
+.mySwiper  .swiper-wrapper > div:nth-child(1)::before,
+.mySwiper  .swiper-wrapper > div:nth-child(2)::before,
+.mySwiper  .swiper-wrapper > div:nth-child(3)::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
 
-.swiper-wrapper > div:nth-child(3){
+.mySwiper > .swiper-wrapper > div:nth-child(3){
     background-image: url(https://jobifyinc.com/wp-content/uploads/2022/06/Communities_Webinar-copy.jpg);
     background-position: bottom;
 }
 
+.mySwiper  .swiper-wrapper> .swiper-slide > div {
+    max-width: max-content;
+    max-height: max-content;
+    margin: auto;
+    margin-top: 250px;
+    color: white;
+    position: relative;
+}
+main{
+    margin-top: 60px;
+}
 
+.mySwiper  .swiper-wrapper> .swiper-slide > div h5 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.mySwiper  .swiper-wrapper> .swiper-slide > div h2{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.mySwiper  .swiper-wrapper> .swiper-slide > div button{
+    background: transparent;
+    width: 180px;
+    height: 50px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 50px;
+    display:block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.mySwiper  .swiper-wrapper> .swiper-slide > div button:hover{
+    border: 2px solid #E76925;
+}
+
+.main-advantage{
+    width: 100%;
+}
+
+.main-advantage-facts{
+    width: 80%;
+}
+
+.main-advantage-facts > div h4{
+    margin: 25px 0 13px;
+    color: #0b1c39;
+}
+
+.main-advantage-facts > div p {
+    max-width: 450px;
+    color: #626a77;
+}
+
+.main-advantage-facts {
+    display: grid;
+    grid-area: 25px;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+
+}
+
+.main-advantage-factsImg{
+    max-width: 55px;
+    max-height: 55px;
+}
+
+.main-advantage-facts{
+    margin-top: 70px;
+}
+
+
+.main-advantage-form{
+    width: 370px;
+    height: max-content;
+    border-radius: 10px;
+    box-shadow: 0px 30px 60px 0px rgba(2, 25, 55, 0.08);
+    position: relative;
+    top: -40px;
+    z-index: 2;
+    background-color: white;
+    padding: 45px 40px 40px;
+}
+
+.main-advantage-form div input {
+    height: 60px;
+    border: none;
+    background-color: #f0f3f7;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 50px;
+    padding: 19px 25px;
+    color: #7c8189;
+    border: 2px solid #f0f3f7;
+    font-size: 16px;
+}
+
+.main-advantage-form  button {
+    width: 100%;
+    height: 60px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: #0c2642;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    transition: all .5s;
+}
+
+.main-advantage-form h3 {
+    margin-bottom: 20px;
+}
+
+input:focus-visible, input:active, input:focus, input:target  {
+    outline-offset: 0px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.main-advantage-form  button:hover{
+    color:#0c2642 ;
+    background: transparent;
+    border: 2px solid #0c2642;
+    transition: all .5s;
+}
+
+
+
+
+.main-offer > div:nth-child(2){
+    position: relative;
+    right: 0;
+}
+
+.main-offer {
+    background-color:#F6F7FA ;
+    padding-top: 120px;
+}
+
+.main-offer h2 {
+    text-align: center;
+    color: #0c2642;
+}
+
+.main-offer > p {
+    color: #626a77;   
+    margin-top: 20px;
+    margin: auto;
+    text-align: center;
+    max-width: 900px;
+    margin-bottom: 40px;
+}
+
+.main-offerServices {
+    min-height: 500px;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.main-offerServices  > div {
+    width: 32%;
+    background-color: white;
+}
+.main-offerServices-accompaniment >  div:nth-child(1) > div{
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    transition: all .5s;
+    overflow: hidden;
+    position: relative;  
+    width: 100%;
+}
+
+.main-offerServices > .main-offerServices-accompaniment:nth-child(1) >  div:nth-child(1) > div{
+    background-image: url(http://www.studyin.fun/wp-content/uploads/%D0%B5.jpeg);
+}
+
+
+.main-offerServices > .main-offerServices-accompaniment:nth-child(2) >  div:nth-child(1) > div{
+    background-image: url(http://www.studyin.fun/wp-content/uploads/studencheskaja-viza-v-angliju-na-11-mesjacev-2-e1510850343693.jpg);
+}
+
+.main-offerServices > .main-offerServices-accompaniment:nth-child(3) >  div:nth-child(1) > div{
+    background-image: url(http://www.studyin.fun/wp-content/uploads/53c971.jpg);
+}
+
+.main-offerServices-2 > .main-offerServices-accompaniment:nth-child(1) >  div:nth-child(1) > div{
+    background-image: url(http://www.studyin.fun/wp-content/uploads/Wenceslas-Square-in-Prague.jpg);
+}
+
+.main-offerServices-2 > .main-offerServices-accompaniment:nth-child(2) >  div:nth-child(1) > div{
+    background-image: url(http://www.studyin.fun/wp-content/uploads/1539530363_44030843_1047158055453950_6309815791189491712_n.webp);
+}
+
+.main-offerServices-2 > .main-offerServices-accompaniment:nth-child(3) >  div:nth-child(1) > div{
+    background-image: url(http://www.studyin.fun/wp-content/uploads/Christmas-market-at-Old-Town-Square.jpg);
+}
+
+.main-offerServices > div {
+    border-radius: 10px;
+}
+
+
+
+
+.main-offerServices-content{
+    padding: 15px 20px 12px 20px;
+    background-color: #fff;
+    
+}
+
+.main-offerServices-content > p {
+    text-align: left;
+    color: #0c2642;
+    font-weight: normal;
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.main-offerServices-accompaniment{
+    transition: all .3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-offerServices-accompaniment:hover{
+    box-shadow: 0px 10px 40px 0px rgba(2, 25, 55, 0.466);
+    transition: all .5s;
+}
+
+.main-offerServices-accompaniment > div:nth-child(1) {
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.main-offerServices-accompaniment > div:nth-child(1) > div:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+    height: 300px;
+    filter: brightness(0.5);
+}
+
+.main-offerServices-content button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #0b1c39;
+    color: white;
+    transition: all .5s;
+    font-weight: 700;
+    border: 2px solid #0b1c39;
+    letter-spacing: 0.06rem;
+}
+
+.main-offerServices-content button:hover{
+    background-color: transparent;
+    border: 2px solid #0b1c39;
+    color: #0b1c39;
+    font-weight: 700;
+}
+
+.main-offerServices-flag{
+    color: red;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 12px 50%);
+    background: #0b1c39;
+    position: absolute;
+    top: 250px;
+    z-index: 2  ;
+    right: 0;
+    width: 180px;
+    padding-left: 15px;
+    height: 26px;
+    line-height: 28px;
+    font-size: 16px;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+    text-align: center;
+    width: max-content;
+    padding: 0 15px 0 20px ;
+}
+
+.main-offerServices-2{
+    padding-bottom: 70px;
+}
+
+.main-offerServices-2{
+    margin-top: 40px;
+}
+
+.main-misson {
+    margin-top: 120px;
+    color: #0c2642;
+    margin-bottom: 120px;
+}
+
+.main-misson > div:nth-child(1){
+    width: 40%;
+}
+
+.main-misson > div:nth-child(2){
+    width: 60%;
+    display: flex;
+}
+
+.main-misson h2 {
+    color: #0c2642;
+    font-size: 32px;
+}
+
+.main-misson-content h3{
+   font-size: 2rem;
+    margin-top: 10px;
+}
+
+.main-misson-contentStyly{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid #0c2642;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin-top: 35px;
+
+}
+
+.main-misson-content-titleStydy{
+    font-size: 22px;
+}
+
+.main-misson-content p:nth-child(1){
+    color: #626a77;
+    max-width: 392px;
+    margin-top: 20px;
+}
+
+.main-misson{
+    justify-content: space-between;
+}
+
+.main-misson-img > div:nth-child(1){
+    border-radius: 10px;
+    margin-top: 30px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 35px;
+    min-height: 506px;
+    width: 40%;
+    background-image: url(https://ithemeslab.com/tmdemo/wp/alumnus/wp-content/uploads/2021/10/mission-img-1-715x1024.png);   
+}
+
+.main-misson-img > div:nth-child(2){
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    min-height: 506px;
+    margin-left: 35px;
+width: 40%;
+    background-image: url(https://ithemeslab.com/tmdemo/wp/alumnus/wp-content/uploads/2021/10/mission-img-2-715x1024.png);   
+}
+
+.main-students{
+    background: #F6F7FA;
+    color: #0c2642;
+}
+
+.main-students > div{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.main-students > div h2 {
+    text-align: center;
+}
+
+.main-students > div p{
+    color: #626a77;
+    margin-top: 20px;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.mySwiper-2 > div > .swiper-slide {
+    height: 550px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.mySwiper-2 > div > .swiper-slide:nth-child(1) > div:nth-child(1){
+    width: 100%;
+   height: 272px;
+    background-image: url(https://varsity.mhrtheme.com/wp-content/uploads/2021/09/popular_item_3.png);
+} 
+
+.mySwiper-2 > div > .swiper-slide:nth-child(3) > div:nth-child(1){
+    width: 100%;
+   height: 272px;
+    background-image: url(
+        http://www.studyin.fun/wp-content/uploads/elementor/thumbs/-qdsm9ibwh1vvveom29f75h43o0cnq1dsk3xh0rp35s.png);
+        background-position: center;
+        background-size: cover;
+} 
+
+.mySwiper-2 > div > .swiper-slide:nth-child(4) > div:nth-child(1){
+    width: 100%;
+   height: 272px;
+    background-image: url(https://varsity.mhrtheme.com/wp-content/uploads/2021/09/popular_item_9.png);
+    background-position: center;
+    background-size: cover;
+} 
+
+.mySwiper-2 > div > .swiper-slide:nth-child(2) > div:nth-child(1){
+    width: 100%;
+   height: 272px;
+    background-image: url(http://www.studyin.fun/wp-content/uploads/%D0%BB4.png);
+    background-position: center;
+    background-size: cover;
+
+} 
+
+.mySwiper-2 > div > .swiper-slide:nth-child(6) > div:nth-child(1){
+    width: 100%;
+   height: 272px;
+    background-image: url(https://varsity.mhrtheme.com/wp-content/uploads/2021/09/popular_item_2.png);
+    background-position: center;
+    background-size: cover;
+
+} 
+
+.mySwiper-2 > div > .swiper-slide:nth-child(5) > div:nth-child(1){
+    width: 100%;
+   height: 272px;
+    background-image: url(https://ithemeslab.com/tmdemo/wp/alumnus/wp-content/uploads/2021/10/blog-img-2-550x370.png);
+    background-position: center;
+    background-size: cover;
+} 
+
+.mySwiper-2 > div > .swiper-slide:nth-child(7) > div:nth-child(1){
+    width: 100%;
+   height: 272px;
+    background-image:url(https://template65040.motopreview.com/mt-demo/65000/65040/mt-content/uploads/2018/01/mt-1315-home-courses2.jpg);
+    background-position: center;
+    background-size: cover;
+
+} 
+
+.fa-star{
+    color: #ffbe21;
+}
+
+
+.swiper-2{
+    padding: 10px 20px;
+}
+
+.swiper-2 > div:nth-child(2) > div:nth-child(1){
+    font-size: 20px;
+}
+
+
+.swiper-2 > div:nth-child(2){
+    margin-top: 10px;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.swiper-2  > p{
+    padding-top: 15px;
+    text-align: justify !important;
+    font-style: italic;
+    font-weight: 700;
+    padding-bottom: 20px ;
+    border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 0 !important;
+
+}
+
+.swiper-slide-facultative{
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.swiper-slide-facultative > div:nth-child(1){
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.main-partners{
+    padding-top: 120px;
+    color: #0c2642;
+}
+
+.main-partners h2{
+    text-align: center;
+}
+
+.main-partners-grid{
+    display: grid; 
+    grid-auto-flow: row dense; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 25px 25px; 
+    grid-template-areas: 
+      ". . . ."
+      ". . . ."
+      ". . . ."; 
+      margin-top: 40px;
+}
+
+.main-partners-grid > div {
+    background-color: #E76925;
+    height: 205px;
+    margin-left: 15px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.main-partners-grid > div img {
+    width: 100%;
+}
